@@ -3,20 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Moje portfolio vytvořené v HTML a přehled toho, co se učím.">
+    <title>Moje portfolio</title>
+    <style>
+        :root { color-scheme: dark; --bg: #10151b; --panel: #1a222b; --text: #eef3f6; --muted: #a8b5bf; --accent: #7ee0bd; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: radial-gradient(ellipse at top, #203a3b 0, var(--bg) 55%); color: var(--text); font: 16px/1.6 system-ui, sans-serif; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover, a:focus-visible { text-decoration: underline; }
+        .wrap { width: min(900px, 90%); margin: auto; }
+        header { padding: 24px 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .brand { color: var(--text); font-weight: 700; letter-spacing: .04em; }
+        nav ul { display: flex; gap: 24px; margin: 0; padding: 0; list-style: none; }
+        .hero { padding: 90px 0 76px; }
+        .eyebrow { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
+        h1 { max-width: 700px; margin: 12px 0; font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1.05; }
+        .intro, .about p { max-width: 600px; color: var(--muted); font-size: 1.1rem; }
+        section { padding: 42px 0; }
+        h2 { font-size: 1.8rem; }
+        .learning-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+        .card { padding: 24px; border: 1px solid #ffffff18; border-radius: 16px; background: var(--panel); transition: transform .2s, border-color .2s; }
+        .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+        .card h3 { margin-top: 0; }
+        .card p { color: var(--muted); }
+        .contact { padding-bottom: 64px; }
+        footer { padding: 22px 0; border-top: 1px solid #ffffff20; color: var(--muted); font-size: .9rem; }
+        @media (max-width: 520px) { nav { align-items: flex-start; gap: 12px; } nav ul { gap: 12px; font-size: .9rem; } .hero { padding: 64px 0 48px; } }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Portfolio</h1>
-    <p>Vítejte na mém portfoliu! Zde najdete ukázky mé práce a projekty, na kterých jsem pracoval.</p>
-    <hr>
-    <h2>Projekty</h2>
-    <ul>
-        <li><a href="project1.html">Projekt 1</a></li>
-        <li><a href="project2.html">Projekt 2</a></li>
-        <li><a href="project3.html">Projekt 3</a></li>
-    </ul>
-    <hr>
-    <h2>Kontakt</h2>
-    <p>Pokud máte zájem o spolupráci, neváhejte mě kontaktovat na emailu: <a href="mailto:">email@domena.com</a></p>
+    <header class="wrap">
+        <nav aria-label="Hlavní navigace">
+            <a class="brand" href="#">PORTFOLIO</a>
+            <ul><li><a href="#ucim-se">Co se učím</a></li><li><a href="#omne">O mně</a></li><li><a href="#kontakt">Kontakt</a></li></ul>
+        </nav>
+    </header>
+    <main class="wrap">
+        <section class="hero">
+            <p class="eyebrow">Ahoj, vítej na mém webu</p>
+            <h1>Učím se tvořit webové stránky.</h1>
+            <p class="intro">Tohle portfolio jsem vytvořil v HTML. V budoucnu se chci naučit programovat také v Pythonu.</p>
+        </section>
+        <section id="ucim-se">
+            <h2>Moje cesta</h2>
+            <div class="learning-grid">
+                <article class="card"><h3>HTML</h3><p>Učím se základy HTML a jak pomocí něj vytvářet webové stránky. Toto portfolio je vytvořené v HTML.</p></article>
+                <article class="card"><h3>Python</h3><p>V budoucnu se chci naučit programovat v Pythonu a objevovat, co všechno s ním můžu vytvořit.</p></article>
+            </div>
+        </section>
+        <section class="about" id="omne">
+            <h2>O mně</h2>
+            <p>Nové věci se učím a zkouším, co všechno dokážu naprogramovat.</p>
+        </section>
+        <section class="contact" id="kontakt">
+            <h2>Máš nápad na spolupráci?</h2>
+            <p>Napiš mi na <a href="mailto:dam.cech@gmail.com">dam.cech@gmail.com</a>.</p>
+        </section>
+    </main>
+    <footer><div class="wrap">© 2026 Damián Čech · <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">Validovat HTML</a></div></footer>
 </body>
 </html>
