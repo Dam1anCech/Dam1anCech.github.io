@@ -45,6 +45,11 @@ a:hover {
     color: #202124;
 }
 
+.portfolio-link {
+    margin-right: auto;
+    color: #202124;
+}
+
 .apps-button {
     display: grid;
     width: 40px;
@@ -223,6 +228,15 @@ a:focus-visible {
 .footer-links nav {
     flex-wrap: wrap;
     gap: 26px;
+}
+
+.validator-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 15px;
+    font-size: 12px;
 }
 
 .visually-hidden {
