@@ -92,6 +92,42 @@ a:hover {
     padding: clamp(58px, 13vh, 128px) 24px 60px;
 }
 
+.citations-page {
+    flex: 1;
+    width: min(760px, 100%);
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+}
+
+.citations-page h1 {
+    margin: 0 0 12px;
+    font-size: clamp(32px, 6vw, 44px);
+}
+
+.citations-page h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.citations-page section {
+    margin-top: 32px;
+}
+
+.citations-page li {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.citations-page a {
+    color: #1a0dab;
+}
+
+.citation-note {
+    margin-top: 36px;
+    color: #70757a;
+    font-size: 14px;
+}
+
 .wordmark {
     font-size: clamp(72px, 12vw, 92px);
     font-weight: 500;
