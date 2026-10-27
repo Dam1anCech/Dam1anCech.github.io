@@ -204,7 +204,9 @@ a:hover {
     margin-top: 30px;
 }
 
-.form-actions button {
+.form-actions a {
+    display: inline-flex;
+    align-items: center;
     min-height: 36px;
     padding: 0 16px;
     border: 1px solid transparent;
@@ -213,15 +215,14 @@ a:hover {
     color: #3c4043;
     font: inherit;
     font-size: 14px;
-    cursor: pointer;
 }
 
-.form-actions button:hover {
+.form-actions a:hover {
     border-color: #dadce0;
     box-shadow: 0 1px 1px #0001;
+    text-decoration: none;
 }
 
-.form-actions button:focus-visible,
 a:focus-visible {
     outline: 2px solid #1a73e8;
     outline-offset: 3px;
